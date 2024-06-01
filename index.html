@@ -45,6 +45,21 @@
             max-width: 30%;
             margin: 10px;
         }
+        .more-visualization-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .more-visualization-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .more-visualization-row .video-container {
+            flex: 1;
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
@@ -89,20 +104,57 @@
         <!-- More Visualization of Diverse Generations Section -->
         <div class="section">
             <h2>More Visualization of Diverse Generations</h2>
-            <div class="comparison-container">
-                <div class="video-container">
-                    <h3>Reference Motion</h3>
-                    <video controls>
-                        <source src="videos/more_reference_motion.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+            <div class="more-visualization-container">
+                <!-- Row 1 -->
+                <div class="more-visualization-row">
+                    <div class="video-container">
+                        <h3>Reference Motion</h3>
+                        <video controls>
+                            <source src="videos/breakdance_ref.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <h3>Generated Motions</h3>
+                        <video controls>
+                            <source src="videos/breakdance_gens.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-                <div class="video-container">
-                    <h3>Generated Motions</h3>
-                    <video controls>
-                        <source src="videos/generated_motions.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <!-- Row 2 -->
+                <div class="more-visualization-row">
+                    <div class="video-container">
+                        <h3>Reference Motion</h3>
+                        <video controls>
+                            <source src="videos/punch_ref.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <h3>Generated Motions</h3>
+                        <video controls>
+                            <source src="videos/punch_gens.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="more-visualization-row">
+                    <div class="video-container">
+                        <h3>Reference Motion</h3>
+                        <video controls>
+                            <source src="videos/more_reference_motion_3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <h3>Generated Motions</h3>
+                        <video controls>
+                            <source src="videos/generated_motions_3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +177,7 @@
             <div class="video-container">
                 <h3>Crowd Simulation</h3>
                 <video controls>
-                    <source src="videos/crowd_simulation.mp4" type="video/mp4">
+                    <source src="videos/crowd_1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
