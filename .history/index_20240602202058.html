@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplementary Materials for Reminiscent Motion Generation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .video-container h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .comparison-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .comparison-container .video-container {
+            flex: 1;
+            max-width: 30%;
+            margin: 10px;
+        }
+        .more-visualization-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .more-visualization-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .more-visualization-row .video-container {
+            flex: 1;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Supplementary Materials for Reminiscent Motion Generation</h1>
+
+        <!-- Comparison with SOTA Methods Section -->
+        <div class="section">
+            <h2>Comparison with SOTA Methods</h2>
+            <div class="comparison-container">
+                <div class="video-container">
+                    <h3>Reference Motion</h3>
+                    <video controls>
+                        <source src="videos/hiphop2_ref.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <h3>SinMDM</h3>
+                    <video controls>
+                        <source src="videos/sinmdm.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <h3>GenMM</h3>
+                    <video controls>
+                        <source src="videos/genmm.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <h3>Ours</h3>
+                    <video controls>
+                        <source src="videos/ours.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- More Visualization of Diverse Generations Section -->
+        <div class="section">
+            <h2>More Visualization of Diverse Generations</h2>
+            <div class="more-visualization-container">
+                <!-- Row 1 -->
+                <div class="more-visualization-row">
+                    <div class="video-container">
+                        <h3>Reference Motion</h3>
+                        <video controls>
+                            <source src="videos/breakdance_ref.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <h3>Generated Motions</h3>
+                        <video controls>
+                            <source src="videos/breakdance_gens.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="more-visualization-row">
+                    <div class="video-container">
+                        <h3>Reference Motion</h3>
+                        <video controls>
+                            <source src="videos/punch_ref.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <h3>Generated Motions</h3>
+                        <video controls>
+                            <source src="videos/punch_gens.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="more-visualization-row">
+                    <div class="video-container">
+                        <h3>Reference Motion</h3>
+                        <video controls>
+                            <source src="videos/housedance_ref.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <h3>Generated Motions</h3>
+                        <video controls>
+                            <source src="videos/housedance_gens.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Application 1: Temporal Composition Section -->
+        <div class="section">
+            <h2>Application 1: Temporal Composition</h2>
+            <div class="video-container">
+                <h3>Temporal Composition</h3>
+                <video controls>
+                    <source src="videos/temporal_composition.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Application 2: Crowd Simulation Section -->
+        <div class="section">
+            <h2>Application 2: Crowd Simulation</h2>
+            <div class="video-container">
+                <h3>Crowd Simulation</h3>
+                <video controls>
+                    <source src="videos/crowd_1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
